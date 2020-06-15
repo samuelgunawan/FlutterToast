@@ -26,6 +26,7 @@ class Fluttertoast {
     Color backgroundColor,
     Color textColor,
     bool webShowClose = false,
+    bool preventOverlap = true,
     webBgColor: "linear-gradient(to right, #00b09b, #96c93d)",
     webPosition: "right"
     // Function(bool) didTap,
@@ -60,6 +61,7 @@ class Fluttertoast {
       'bgcolor': backgroundColor != null ? backgroundColor.value : null,
       'textcolor': textColor != null ? textColor.value : null,
       'fontSize': fontSize,
+      'preventOverlap': preventOverlap,
       'webShowClose': webShowClose,
       'webBgColor':   webBgColor,
       'webPosition': webPosition
